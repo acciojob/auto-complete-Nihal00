@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import './../styles/App.css';
 
 let fruits = ["apple", "banana", "cherry", "date", "elderberry", "fig"]
@@ -16,6 +16,7 @@ const App = () => {
       setItem(fruits);
     } else {
       let newArr = fruits.filter(ele => ele.includes(letter));
+      setItem(newArr);
     }
   }
 
